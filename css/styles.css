@@ -466,6 +466,9 @@ address {
 
 /* Footer */
 .footer-container {
+  display: flex;
+  align-items: start;
+  gap: 120px;
 }
 .footer {
   background-color: #2e2f42;
@@ -474,6 +477,9 @@ address {
   margin-right: auto;
   margin-left: auto;
 }
+.footer-logo-text {
+}
+
 .footer-link {
   font-family: "Raleway" sans-serif;
   font-style: normal;
@@ -519,6 +525,9 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+
+.footer-wrap {
 }
 
 .footer-soc-list {
