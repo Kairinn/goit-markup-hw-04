@@ -181,10 +181,12 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  flex-grow: 1;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -400,6 +402,11 @@ address {
   justify-content: center;
 }
 
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
+}
+
 .team-soc-icon {
   fill: #f4f4fd;
 }
@@ -442,10 +449,9 @@ address {
 .customers-link {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
-  align-content: center;
   align-items: center;
   justify-content: center;
   color: #8e8f99;
@@ -454,21 +460,15 @@ address {
 .customers-link:hover,
 .customers-link:focus {
   color: #4d5ae5;
-  border-color: #4d5ae5;
 }
 .customers-icon {
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   fill: currentColor;
 }
 
 /* Footer */
 .footer-container {
   display: flex;
-  align-items: start;
-  gap: 120px;
 }
 .footer {
   background-color: #2e2f42;
@@ -478,6 +478,7 @@ address {
   margin-left: auto;
 }
 .footer-logo-text {
+  margin-right: 120px;
 }
 
 .footer-link {
@@ -550,6 +551,12 @@ address {
   align-items: center;
   justify-content: center;
 }
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+
 .team-soc-icon {
   fill: #f4f4fd;
 }
@@ -559,7 +566,7 @@ address {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -611,7 +618,9 @@ address {
 .hero-btn-portfolio:focus {
   color: #f4f4fd;
   background-color: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .hero-list-portfolio {
@@ -622,6 +631,17 @@ address {
 }
 .hero-item-portfolio {
 }
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .hero-item-title-portfolio {
   font-weight: 500;
   font-size: 20px;
